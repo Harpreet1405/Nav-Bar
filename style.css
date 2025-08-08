@@ -40,10 +40,18 @@ nav.navbar > div, nav.navbar > p {
 nav.navbar .logo {
   width: 97px;
   height: 62px;
-  background-image: url('ibm.webp');
-  background-size: cover;
-  background-position: center;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;  /* remove padding if any */
+  background: none; /* remove background image */
+}
+
+nav.navbar .logo img {
+  max-width: 120%;
+  max-height: 120%;
+  display: block;
 }
 
 .poster {
